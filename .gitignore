@@ -1,0 +1,9 @@
+*.swp
+SeqPHASE/
+helloworld/helloworld.jar/
+helloworld/helloworld.js
+helloworld/helloworld.lua
+helloworld/helloworld.n
+helloworld/helloworld.py
+helloworld/helloworld/
+times.dat
