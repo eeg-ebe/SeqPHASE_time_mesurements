@@ -1,0 +1,106 @@
+*************************************************************
+****                                                     ****
+****            Output from PHASE v2.1.1                 ****
+****  Code by M Stephens, with contributions from N Li   ****
+****                                                     ****
+*************************************************************
+
+BEGIN COMMAND_LINE 
+/home/yann/proj/phase.2.1.1.linux/PHASE phase.inp phase.out 
+END COMMAND_LINE 
+
+BEGIN OUTFILE_LIST
+phase.out_freqs : haplotype frequency estimates
+phase.out_pairs : most likely haplotype pairs for each individual
+phase.out_recom : estimates of recombination parameters
+phase.out_monitor : file for monitoring convergence
+END OUTFILE_LIST
+
+BEGIN INPUT_SUMMARY
+Number of Individuals: 5
+Number of Loci: 38
+Positions of loci: 2 3 11 33 64 68 85 86 90 105 111 121 127 130 142 143 144 145 150 173 192 207 208 211 212 215 221 223 238 252 254 256 258 260 261 274 292 295 
+END INPUT_SUMMARY
+
+List of haplotypes found in best reconstruction, with counts.
+(See file phase.out_freqs for haplotype population frequency estimates)
+
+BEGIN LIST_SUMMARY
+         1 24133324322241341413422233322332131143    1.000000
+         2 44113342324421343434224211142134313221    1.000000
+         3 44113342324421343434224211142334313221    3.000000
+         4 44113342324421343234214211142314313221    1.000000
+         5 44113342144223123434224211124334311221    1.000000
+         6 44333324322241341413422233322332131143    2.000000
+         7 42111142324421343434224411142134311221    1.000000
+END LIST_SUMMARY
+
+
+Summary of best reconstruction
+(numbers refer to the list of haplotypes given above)
+
+BEGIN BESTPAIRS_SUMMARY
+Individual0: (1,2)
+Individual1: (5,6)
+Individual2: (3,7)
+Individual3: (3,4)
+Individual4: (3,6)
+END BESTPAIRS_SUMMARY
+
+
+Haplotype estimates for each individual, with uncertain phases enclosed in ()
+and uncertain genotypes enclosed in []:
+
+BEGIN BESTPAIRS1
+0 Individual0
+(2) 4 1 3 3 3 2 4 3 2 2 2 4 1 3 4 1 4 1 3 4 2 2 2 3 3 3 2 2 (3) 3 2 1 3 1 1 4 3 
+(4) 4 1 1 3 3 4 2 3 2 4 4 2 1 3 4 3 4 3 4 2 2 4 2 1 1 1 4 2 (1) 3 4 3 1 3 2 2 1 
+0 Individual1
+4 4 (1) 1 3 3 4 2 1 4 4 2 2 3 1 2 3 4 3 4 2 2 4 2 1 1 1 2 4 3 3 4 3 1 1 2 2 1 
+4 4 (3) 3 3 3 2 4 3 2 2 2 4 1 3 4 1 4 1 3 4 2 2 2 3 3 3 2 2 3 3 2 1 3 1 1 4 3 
+0 Individual2
+4 (4) 1 1 (3) (3) 4 2 3 2 4 4 2 1 3 4 3 4 3 4 2 2 4 (2) 1 1 1 4 2 (3) 3 4 3 1 (3) 2 2 1 
+4 (2) 1 1 (1) (1) 4 2 3 2 4 4 2 1 3 4 3 4 3 4 2 2 4 (4) 1 1 1 4 2 (1) 3 4 3 1 (1) 2 2 1 
+0 Individual3
+4 4 1 1 3 3 4 2 3 2 4 4 2 1 3 4 3 (4) 3 4 2 (2) 4 2 1 1 1 4 2 3 (3) 4 3 1 3 2 2 1 
+4 4 1 1 3 3 4 2 3 2 4 4 2 1 3 4 3 (2) 3 4 2 (1) 4 2 1 1 1 4 2 3 (1) 4 3 1 3 2 2 1 
+0 Individual4
+4 4 (1) 1 3 3 4 2 3 2 4 4 2 1 3 4 3 4 3 4 2 2 4 2 1 1 1 4 2 3 3 4 3 1 3 2 2 1 
+4 4 (3) 3 3 3 2 4 3 2 2 2 4 1 3 4 1 4 1 3 4 2 2 2 3 3 3 2 2 3 3 2 1 3 1 1 4 3 
+END BESTPAIRS1
+
+
+Haplotype estimates for each individual, with uncertain phases enclosed in ()
+and uncertain genotypes enclosed in []
+with phase known positions indicated by =
+
+BEGIN BESTPAIRS2
+0 Individual0
+(2) = = 3 = = 2 4 = = 2 2 4 = = = 1 = 1 3 4 = 2 = 3 3 3 2 = (3) = 2 1 3 1 1 4 3 
+(4) = = 1 = = 4 2 = = 4 4 2 = = = 3 = 3 4 2 = 4 = 1 1 1 4 = (1) = 4 3 1 3 2 2 1 
+0 Individual1
+= = (1) 1 = = 4 2 1 4 4 = 2 3 1 2 3 = 3 4 2 = 4 = 1 1 1 = 4 = = 4 3 1 = 2 2 1 
+= = (3) 3 = = 2 4 3 2 2 = 4 1 3 4 1 = 1 3 4 = 2 = 3 3 3 = 2 = = 2 1 3 = 1 4 3 
+0 Individual2
+= (4) = = (3) (3) = = = = = = = = = = = = = = = = = (2) = = = = = (3) = = = = (3) = = = 
+= (2) = = (1) (1) = = = = = = = = = = = = = = = = = (4) = = = = = (1) = = = = (1) = = = 
+0 Individual3
+= = = = = = = = = = = = = = = = = (4) = = = (2) = = = = = = = = (3) = = = = = = = 
+= = = = = = = = = = = = = = = = = (2) = = = (1) = = = = = = = = (1) = = = = = = = 
+0 Individual4
+= = (1) 1 = = 4 2 = = 4 4 2 = = = 3 = 3 4 2 = 4 = 1 1 1 4 = = = 4 3 1 3 2 2 1 
+= = (3) 3 = = 2 4 = = 2 2 4 = = = 1 = 1 3 4 = 2 = 3 3 3 2 = = = 2 1 3 1 1 4 3 
+END BESTPAIRS2
+
+
+Phase probabilities at each site
+with phase known positions indicated by =
+and missing data positions indicated by ?
+
+BEGIN PHASEPROBS
+0.51 = = 1.00 = = 1.00 1.00 = = 1.00 1.00 1.00 = = = 1.00 = 1.00 1.00 1.00 = 1.00 = 1.00 1.00 1.00 1.00 = 0.59 = 1.00 1.00 1.00 0.99 1.00 1.00 1.00 
+= = 0.86 1.00 = = 1.00 1.00 0.91 0.91 1.00 = 1.00 0.91 0.91 0.91 1.00 = 1.00 1.00 1.00 = 1.00 = 1.00 1.00 1.00 = 0.91 = = 1.00 1.00 1.00 = 1.00 1.00 1.00 
+= 0.72 = = 0.80 0.80 = = = = = = = = = = = = = = = = = 0.80 = = = = = 0.75 = = = = 0.80 = = = 
+= = = = = = = = = = = = = = = = = 0.76 = = = 0.76 = = = = = = = = 0.76 = = = = = = = 
+= = 0.86 1.00 = = 1.00 1.00 = = 1.00 1.00 1.00 = = = 1.00 = 1.00 1.00 1.00 = 1.00 = 1.00 1.00 1.00 1.00 = = = 1.00 1.00 1.00 0.99 1.00 1.00 1.00 
+END PHASEPROBS

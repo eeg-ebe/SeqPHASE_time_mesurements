@@ -1,0 +1,88 @@
+*************************************************************
+****                                                     ****
+****            Output from PHASE v2.1.1                 ****
+****  Code by M Stephens, with contributions from N Li   ****
+****                                                     ****
+*************************************************************
+
+BEGIN COMMAND_LINE 
+/home/yann/proj/phase.2.1.1.linux/PHASE phase.inp phase.out 
+END COMMAND_LINE 
+
+BEGIN OUTFILE_LIST
+phase.out_freqs : haplotype frequency estimates
+phase.out_pairs : most likely haplotype pairs for each individual
+phase.out_recom : estimates of recombination parameters
+phase.out_monitor : file for monitoring convergence
+END OUTFILE_LIST
+
+BEGIN INPUT_SUMMARY
+Number of Individuals: 3
+Number of Loci: 14
+Positions of loci: 5 13 34 67 79 106 125 164 221 225 231 235 243 265 
+END INPUT_SUMMARY
+
+List of haplotypes found in best reconstruction, with counts.
+(See file phase.out_freqs for haplotype population frequency estimates)
+
+BEGIN LIST_SUMMARY
+         1 32212344142221    1.000000
+         2 34132344142441    2.000000
+         3 34132342142441    1.000000
+         4 34234342322443    1.000000
+         5 14234122124421    1.000000
+END LIST_SUMMARY
+
+
+Summary of best reconstruction
+(numbers refer to the list of haplotypes given above)
+
+BEGIN BESTPAIRS_SUMMARY
+Individual0: (1,2)
+Individual1: (2,5)
+Individual2: (3,4)
+END BESTPAIRS_SUMMARY
+
+
+Haplotype estimates for each individual, with uncertain phases enclosed in ()
+and uncertain genotypes enclosed in []:
+
+BEGIN BESTPAIRS1
+0 Individual0
+3 (2) (2) (1) 2 3 4 4 1 4 2 (2) (2) 1 
+3 (4) (1) (3) 2 3 4 4 1 4 2 (4) (4) 1 
+0 Individual1
+3 4 (1) 3 (2) 3 4 (4) 1 (4) 2 4 (4) 1 
+1 4 (2) 3 (4) 1 2 (2) 1 (2) 4 4 (2) 1 
+0 Individual2
+3 4 (1) 3 (2) 3 4 2 (1) (4) 2 4 4 (1) 
+3 4 (2) 3 (4) 3 4 2 (3) (2) 2 4 4 (3) 
+END BESTPAIRS1
+
+
+Haplotype estimates for each individual, with uncertain phases enclosed in ()
+and uncertain genotypes enclosed in []
+with phase known positions indicated by =
+
+BEGIN BESTPAIRS2
+0 Individual0
+= (2) (2) (1) = = = = = = = (2) (2) = 
+= (4) (1) (3) = = = = = = = (4) (4) = 
+0 Individual1
+3 = (1) = (2) 3 4 (4) = (4) 2 = (4) = 
+1 = (2) = (4) 1 2 (2) = (2) 4 = (2) = 
+0 Individual2
+= = (1) = (2) = = = (1) (4) = = = (1) 
+= = (2) = (4) = = = (3) (2) = = = (3) 
+END BESTPAIRS2
+
+
+Phase probabilities at each site
+with phase known positions indicated by =
+and missing data positions indicated by ?
+
+BEGIN PHASEPROBS
+= 0.69 0.68 0.70 = = = = = = = 0.69 0.69 = 
+0.96 = 0.54 = 0.60 0.96 0.96 0.54 = 0.62 0.91 = 0.53 = 
+= = 0.69 = 0.69 = = = 0.70 0.69 = = = 0.70 
+END PHASEPROBS
