@@ -104,9 +104,8 @@ if __name__ == "__main__":
     step2Datasets = [f for f in os.listdir("datasets/step2")]
     for cmd in commands:
         for ds in step2Datasets:
-            if ds.endswith(".out"):
-                const = ds[:-4]
-                cmds.append("%s -c %s.const -i %s" % (cmd, const, ds))
+            if os.path.isdir("datasets/step2/%s" % ds):
+                cmds.append("%s -c datasets/step2/%s/phase.const -i datasets/step2/%s/phase.out" % (cmd, ds, ds))
 
     mes = measureTimes(cmds, 5)
     saveTime(mes, "times.dat")
